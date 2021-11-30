@@ -1,1 +1,5 @@
-install: comoser install
+install:
+			comoser install
+
+brain-games:
+			php bin/brain-games.php
