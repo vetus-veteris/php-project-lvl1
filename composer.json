@@ -1,7 +1,7 @@
 {
     "name": "hexlet/code",
     "bin": ["bin/brain-games",
-	    "bin/brain-even"],
+	        "bin/brain-even"],
     "type": "project",
     "authors": [
         {
@@ -16,7 +16,8 @@
             "Hexlet\\Code\\": "src/"
         },
         
-        "files": ["src/Cli.php"]
+        "files": ["src/Even.php"]
+        
     },
     
     "require": {
