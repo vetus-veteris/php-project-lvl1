@@ -1,4 +1,4 @@
-all: brain-even
+all: update lint
 
 install:
 	composer install
@@ -8,6 +8,9 @@ brain-games:
 
 brain-even:
 	@./bin/brain-even
+
+brain-calc:
+	@./bin/brain-calc
 
 validate:
 	composer validate
