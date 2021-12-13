@@ -12,6 +12,9 @@ brain-even:
 brain-calc:
 	@./bin/brain-calc
 
+brain-gcd:
+	@./bin/brain-gcd
+
 validate:
 	composer validate
 
@@ -20,3 +23,6 @@ lint:
 
 update:
 	composer update
+
+chmod:
+	chmod +x bin/brain-gcd
