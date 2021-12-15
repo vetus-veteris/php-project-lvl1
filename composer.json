@@ -1,9 +1,10 @@
 {
     "name": "hexlet/code",
     "bin": ["bin/brain-games",
-	        "bin/brain-even",
+	    "bin/brain-even",
             "bin/brain-calc",
-            "bin/brain-gcd"],
+            "bin/brain-gcd",
+	    "bin/brain-progression"],
     "type": "project",
     "authors": [
         {
@@ -18,7 +19,7 @@
             "Hexlet\\Code\\": "src/"
         },
         
-        "files": ["src/Gcd.php"]
+        "files": ["src/Progression.php"]
         
     },
     
