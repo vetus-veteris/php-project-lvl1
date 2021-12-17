@@ -18,6 +18,9 @@ brain-gcd:
 brain-progression:
 	@./bin/brain-progression
 
+brain-prim:
+	@./bin/brain-prime
+
 validate:
 	composer validate
 
@@ -28,4 +31,4 @@ update:
 	composer update
 
 chmod:
-	chmod +x bin/brain-gcd
+	chmod +x bin/brain-prime
