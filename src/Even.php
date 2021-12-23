@@ -23,17 +23,15 @@ function even()
         line($question);
         $divisorUser = prompt('Your answer');
         if ($divisorUser === $divisorComp && $i < 2) {
-                line("Correct!");
-                continue;
+            line("Correct!");
+            continue;
         } elseif ($divisorComp === $divisorUser && $i === 2) {
             line("Correct!");
             line("Congratulations, %s!", $name);
         } else {
             line("'{$divisorUser}' is wrong answer ;(. Correct answer was '{$divisorComp}'.)");
-            if ($i < 2) {
-                line("Let's try again, %s!", $name);
-                break;
-            }
+            line("Let's try again, %s!", $name);
+            break;
         }
     }
 }
