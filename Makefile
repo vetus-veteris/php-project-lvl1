@@ -1,5 +1,3 @@
-all: lint update brain-gcd
-
 install:
 	composer install
 
@@ -32,6 +30,3 @@ lint:
 
 update:
 	composer update
-
-chmod:
-	chmod +x bin/brain-prime
