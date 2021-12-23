@@ -1,4 +1,4 @@
-all: update brain-even
+all: lint update brain-calc
 
 install:
 	composer install
