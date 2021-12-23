@@ -17,15 +17,15 @@ function calc()
         $operations = rand(1, 3);
         switch ($operations) {
             case 1:
-                $question = "$firstNumber + $secondNumber";
+                $question = "Question: $firstNumber + $secondNumber";
                 $answer = $firstNumber + $secondNumber;
                 break;
             case 2:
-                $question = "$firstNumber - $secondNumber";
+                $question = "Question: $firstNumber - $secondNumber";
                 $answer = $firstNumber - $secondNumber;
                 break;
             case 3:
-                $question = "$firstNumber * $secondNumber";
+                $question = "Question: $firstNumber * $secondNumber";
                 $answer = $firstNumber * $secondNumber;
                 break;
         }
