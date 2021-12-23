@@ -1,11 +1,13 @@
 {
     "name": "hexlet/code",
+    
     "bin": ["bin/brain-games",
-	        "bin/brain-even",
-            "bin/brain-calc",
             "bin/brain-gcd",
-	        "bin/brain-progression",
-            "bin/brain-prime"],
+            "bin/brain-even",
+            "bin/brain-prime",
+            "bin/brain-calc",
+            "bin/brain-progression"],
+    
     "type": "project",
     "authors": [
         {
@@ -17,11 +19,22 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Hexlet\\Code\\": "src/"
+            "Brain\\Games\\Cli\\": "src/",
+            "Brain\\Games\\Gcd\\": "src/",
+            "Brain\\Games\\Even\\": "src/",
+            "Brain\\Games\\Prime\\": "src/",
+            "Brain\\Games\\Calc\\": "src/",
+            "Brain\\Games\\Progression\\": "src/"
         },
         
-        "files": ["src/Prime.php"]
-        
+        "files": [
+            "src/Cli.php",
+            "src/Gcd.php",
+            "src/Even.php",
+            "src/Prime.php",
+            "src/Calc.php",
+            "src/Progression.php"
+        ]
     },
     
     "require": {
