@@ -33,7 +33,7 @@ function even()
             }
         }
         if ($i === 2) {
-            line("Congratulations, Sam!");
+            line("Congratulations, $name");
         }
     }
 }
