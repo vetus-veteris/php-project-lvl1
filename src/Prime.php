@@ -7,8 +7,10 @@ use function cli\prompt;
 
 function prime()
 {
+    line('Welcome to the Brain Games!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
     line("Answer \"yes\" if given number is prime. Otherwise answer \"no\".");
-
     $count = 0;
     for ($i = 0; $i < 3; $i++) {
         while ($count < 3) {

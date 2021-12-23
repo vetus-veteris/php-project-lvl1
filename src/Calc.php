@@ -7,6 +7,9 @@ use function cli\prompt;
 
 function calc()
 {
+    line('Welcome to the Brain Games!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
     line('What is the result of the expression?');
     $count = 0;
     for ($i = 0; $i < 3; $i++) {

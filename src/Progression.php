@@ -7,6 +7,9 @@ use function cli\prompt;
 
 function progression()
 {
+    line('Welcome to the Brain Games!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
     line("What number is missing in the progression?");
     $count = 0;
 

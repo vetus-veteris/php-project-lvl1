@@ -7,6 +7,9 @@ use function cli\prompt;
 
 function gcd()
 {
+    line('Welcome to the Brain Games!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
     line("Find the greatest common divisor of given numbers.");
     $count = 0;
     $divisorComp = 0;
