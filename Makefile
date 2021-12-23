@@ -1,4 +1,4 @@
-all: lint update brain-calc
+all: lint update brain-progression
 
 install:
 	composer install
