@@ -13,36 +13,28 @@ function even()
     line("Answer \"yes\" if the number is even, otherwise answer \"no\".");
     $count = 0;
     for ($i = 0; $i < 3; $i++) {
-        while ($count < 3) {
-            $number = rand(1, 20);
-            if ($number % 2 === 0) {
-                $divisorComp = "yes";
-            } else {
-                $divisorComp = "no";
-            }
-            $question = "Question: $number";
-            line($question);
-            $divisorUser = prompt('Your answer');
-            if ($divisorUser === $divisorComp && $count < 2) {
-                line("Correct!");
-                $count++;
-                continue;
-            } elseif ($divisorComp === $divisorUser && $count === 2) {
-                line("Congratulations, %s!", $name);
-                $flag = true;
-                $count = 10;
-            } else {
-                line("'{$divisorUser}' is wrong answer ;(. Correct answer was '{$divisorComp}'.)");
-                if ($i < 2) {
-                    line("Let's try again, %s!", $name);
-                }
-                $flag = false;
-                $count = 10;
-            }
+        $number = rand(1, 20);
+        if ($number % 2 === 0) {
+            $divisorComp = "yes";
+        } else {
+            $divisorComp = "no";
         }
-        $count = 0;
-        if ($flag) {
-            break;
+        $question = "Question: $number";
+        line($question);
+        $divisorUser = prompt('Your answer');
+        if ($divisorUser === $divisorComp && $count < 2) {
+                line("Correct!");
+                continue;
+        } elseif ($divisorComp === $divisorUser && $count === 2) {
+            line("Congratulations, %s!", $name);
+            $flag = true;
+        } else {
+            line("'{$divisorUser}' is wrong answer ;(. Correct answer was '{$divisorComp}'.)");
+            if ($i < 2) {
+                line("Let's try again, %s!", $name);
+                break;
+            }
         }
     }
 }
+
