@@ -1,4 +1,4 @@
-#all: update brain-progression
+all: update brain-even
 
 install:
 	composer install
