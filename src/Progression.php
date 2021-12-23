@@ -48,6 +48,7 @@ function progression()
         } else {
             line("'{$divisorUser}' is wrong answer ;(. Correct answer was '{$divisorComp}'.)");
             line("Let's try again, %s!", $name);
+            break;
         }
     }
 }
