@@ -1,4 +1,4 @@
-all: lint update brain-progression
+all: lint update brain-gcd
 
 install:
 	composer install

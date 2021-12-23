@@ -27,7 +27,7 @@ function gcd()
         $question = "Question: $firstNumber $secondNumber";
         line($question);
         $divisorUser = (int)prompt('Your answer');
-        if ($divisorComp === $divisorUser && $count < 2) {
+        if ($divisorComp === $divisorUser && $i < 2) {
             line("Correct!");
             continue;
         } elseif ($divisorComp === $divisorUser && $i === 2) {
