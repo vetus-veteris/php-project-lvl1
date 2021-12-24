@@ -27,7 +27,7 @@ function prime()
         }
         $question = "Question: $number";
         line($question);
-        $divisorUser = (string) prompt('Your answer');
+        $divisorUser = prompt('Your answer');
         if ($divisorComp === $divisorUser && $i < 2) {
             line("Correct!");
             continue;

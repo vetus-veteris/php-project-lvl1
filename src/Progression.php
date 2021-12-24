@@ -7,6 +7,8 @@ use function cli\prompt;
 
 function progression()
 {
+    $divisorComp = PHP_INT_MIN;
+    $divisorUser = PHP_INT_MAX;
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
