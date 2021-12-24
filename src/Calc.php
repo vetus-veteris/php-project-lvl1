@@ -7,6 +7,8 @@ use function cli\prompt;
 
 function calc()
 {
+    $question = "Enter your name";
+    $userAnswer = "Enter your answer";
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
