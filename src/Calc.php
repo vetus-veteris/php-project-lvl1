@@ -8,7 +8,8 @@ use function cli\prompt;
 function calc()
 {
     $question = "Enter your name";
-    $userAnswer = "Enter your answer";
+    $userAnswer = PHP_INT_MAX;
+    $answer = PHP_INT_MIN;
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
